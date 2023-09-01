@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get all commits</title>
+</head>
+<body style="background-color:powderblue;">
+    <img alt="Liquiloans"  src="https://miro.medium.com/v2/resize:fit:708/1*LSNWlfKqhzt06C8YI3QhXA.png" width="354" height="60" loading="lazy">
+    <h1>Git Analysis</h1>
+    <table> 
+        <thead> 
+        <tr> <th>hii</th>
+            <th>Date</th> 
+            <th>Name</th>
+            <th>Message</th> 
+        </tr> 
+        </thead> 
+        <tbody> 
+            {% for row in final_list %}  
+                <tr> 
+                    <td>{{row[0]}}</td>
+                    <td>{{row[1]}}</td>
+                    <td>{{row[2]}}</td>  
+                </tr> 
+            {% endfor %} 
+        </tbody> 
+    </table>
+</body>
+</html>
